@@ -7,7 +7,7 @@ function Profile() {
   //resume
   const handleDownload = () => {
     return window.open(
-      "https://drive.google.com/file/d/1pHp8ostGy5u2YNx38GzzrLyntDrsMFEd/view?usp=sharing"
+      "https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"
     );
   };
 
@@ -70,7 +70,7 @@ function Profile() {
               as={Link}
               _hover={{ textDecoration: "none" }}
               download={true}
-              href={"https://drive.google.com/file/d/1pHp8ostGy5u2YNx38GzzrLyntDrsMFEd/view?usp=sharing"}
+              href={"https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"}
               onClick={handleDownload}
               target="_blank"
             >
