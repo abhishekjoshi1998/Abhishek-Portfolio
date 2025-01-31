@@ -99,7 +99,7 @@ function Profile() {
           {/* profile */}
           <Box>
             <Image
-              src="https://i.ibb.co/HXddN97/IMG-20250124-230430.jpg"
+              src="https://i.ibb.co/JpXD6Yq/IMG-20250124-230430-1.jpg"
               shadow="lg"
               mt={{ base: "10px", md: "0px" }}
               w={{ base: "150px", md: "200px", lg: "350px" }}
