@@ -2,12 +2,11 @@ import { Box, Button, Flex, Image, Text, Link } from "@chakra-ui/react";
 import { HiDownload } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-
 function Profile() {
   //resume
   const handleDownload = () => {
     return window.open(
-      "https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"
+      "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"
     );
   };
 
@@ -20,11 +19,7 @@ function Profile() {
   return (
     <>
       <Box height={{ base: "50px", md: "80px" }}></Box>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeIn}
-      >
+      <motion.div initial="hidden" animate="visible" variants={fadeIn}>
         <Flex
           w={{ base: "100%", md: "80%" }}
           m="auto"
@@ -51,11 +46,6 @@ function Profile() {
                 <Text color="#RGBA(0, 0, 0, 0.64)">
                   <b>Hello👋, I Am</b>
                 </Text>
-                {/* <Image
-                  mt="-5px"
-                  w={{ base: "40px", md: "60px", lg: "85px" }}
-                  src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif"
-                /> */}
               </Flex>
 
               <Text color="#RGBA(0, 0, 0, 0.64)">
@@ -70,7 +60,9 @@ function Profile() {
               as={Link}
               _hover={{ textDecoration: "none" }}
               download={true}
-              href={"https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"}
+              href={
+                "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"
+              }
               onClick={handleDownload}
               target="_blank"
             >
@@ -87,7 +79,7 @@ function Profile() {
               </Button>{" "}
             </Text>
           </Box>
-    {/* profile */}
+          {/* profile */}
           <Box>
             <Image
               src="https://i.ibb.co/HXddN97/IMG-20250124-230430.jpg"
