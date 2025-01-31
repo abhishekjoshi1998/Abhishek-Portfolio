@@ -4,11 +4,28 @@ import { motion } from "framer-motion";
 
 function Profile() {
   //resume
-  const handleDownload = () => {
-    return window.open(
-      "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"
-    );
-  };
+  const handleDownload = async () => {
+  try {
+    const resumeUrl =
+      "https://drive.google.com/file/d/17BFd-VGe3yIWYRD0_YFKoEyCfGvOqmjN/view?usp=sharing";
+
+    const response = await fetch(resumeUrl);
+    const blob = await response.blob();
+
+    const link = document.createElement("a");
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "abhishekjoshi.pdf"; // 
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(link.href);
+  } catch (error) {
+    console.error("Error downloading the resume:", error);
+  }
+};
+
 
   // Framer Motion Variants
   const fadeIn = {
@@ -61,7 +78,7 @@ function Profile() {
               _hover={{ textDecoration: "none" }}
               download={true}
               href={
-                "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"
+                "https://drive.google.com/file/d/17BFd-VGe3yIWYRD0_YFKoEyCfGvOqmjN/view?usp=sharing"
               }
               onClick={handleDownload}
               target="_blank"
