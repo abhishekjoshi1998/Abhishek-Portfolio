@@ -7,7 +7,7 @@ function Profile() {
   //resume
   const handleDownload = () => {
     return window.open(
-      "https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"
+      "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"
     );
   };
 
@@ -70,7 +70,7 @@ function Profile() {
               as={Link}
               _hover={{ textDecoration: "none" }}
               download={true}
-              href={"https://drive.google.com/file/d/1E1GSzucLMWZY6moREJagw5Xgb0J7Zlpl/view?usp=sharing"}
+              href={"https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679be58bf97830ef5e8c2981"}
               onClick={handleDownload}
               target="_blank"
             >
